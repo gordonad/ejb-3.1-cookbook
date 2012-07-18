@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ejb-jar xmlns = "http://java.sun.com/xml/ns/javaee" 
+         version = "3.1"
+         xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation = "http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_1.xsd">
+<!-- ****************************************************
+    <enterprise-beans>
+        <session>
+            <ejb-name>SimpleInterceptor</ejb-name>
+            <post-construct>
+                <lifecycle-callback-class>packt.SimpleInterceptor</lifecycle-callback-class>
+                <lifecycle-callback-method>constructed</lifecycle-callback-method>
+            </post-construct>
+        </session>
+    </enterprise-beans>
+-->
+<!-- ****************************************************-->
+    <interceptors>
+        <interceptor>
+            <interceptor-class>packt.DefaultInterceptor</interceptor-class>
+        </interceptor>
+        <interceptor>
+            <interceptor-class>packt.SimpleInterceptor</interceptor-class>
+            <post-construct>
+                <lifecycle-callback-class>packt.SimpleInterceptor</lifecycle-callback-class>
+                <lifecycle-callback-method>constructed</lifecycle-callback-method>
+            </post-construct>
+        </interceptor>
+    </interceptors>
+    <assembly-descriptor>
+        <interceptor-binding>
+            <ejb-name>*</ejb-name>
+            <interceptor-class>packt.DefaultInterceptor</interceptor-class>
+        </interceptor-binding>
+        <interceptor-binding>
+            <ejb-name>RegistrationManager</ejb-name>
+            <interceptor-order>
+                <interceptor-class>packt.SimpleInterceptor</interceptor-class>
+                <interceptor-class>packt.DefaultInterceptor</interceptor-class>
+            </interceptor-order>
+            <method>
+                <method-name>register</method-name>
+            </method>
+        </interceptor-binding>
+
+    </assembly-descriptor>
+
+    <!-- ****************************************************-->
+</ejb-jar>

@@ -1,0 +1,29 @@
+ACE	Accupril	10	1
+ACE	Vasitec	10	2
+ACE	Enalaoril Maleate	5	1
+ACE	Altace	25	1
+Anti-Bacterial	Erygel	15	3
+Anti-Bacterial	Ilosone	5	2
+Anti-Bacterial	Amoxil	10	4
+Anti-Bacterial	Cleocin	5	2
+Anti-Bacterial	Urex	5	2
+Anti-Bacterial	Zyvox	10	3
+Anti-Fungal		Terazol	20	1
+Anti-Fungal		Oxistat	10	4
+Anti-Fungal		Nystatin	5	6
+Anti-Fungal		Mycelex	12	2
+Diuretic	Aldactone	5	3
+Diuretic	Lasix	12	1
+Diuretic	Dyrenium	10	4
+
+
+Donald	Baker	M	3/13/1976
+Jennifer	Campbell	F	5/23/1982
+Steven	Young	M	6/12/1965
+George	Thompson	M	12/2/1957
+Sandra	Taylor	F	1/23/1998
+Maria	Green	F	7/21/1978
+Sarah	Walker	F	10/10/1980
+Kevin	Hall	M	4/2/2005
+Carol	Harris	F	8/11/1958
+

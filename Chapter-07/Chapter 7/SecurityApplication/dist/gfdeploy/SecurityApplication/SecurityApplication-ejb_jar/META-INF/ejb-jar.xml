@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ejb-jar xmlns = "http://java.sun.com/xml/ns/javaee" 
+         version = "3.1"
+         xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation = "http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_1.xsd">
+    <enterprise-beans>
+        <session>
+            <ejb-name>VoucherManager</ejb-name>
+        </session>
+    </enterprise-beans>
+    <assembly-descriptor>
+        <security-role>
+            <role-name>manager</role-name>
+        </security-role>
+        <method-permission>
+            <role-name>manager</role-name>
+            <method>
+                <ejb-name>VoucherManager</ejb-name>
+                <method-name>approve</method-name>
+                <method-params>
+                    <method-param></method-param>
+                </method-params>
+            </method>
+        </method-permission>
+    </assembly-descriptor>
+</ejb-jar>

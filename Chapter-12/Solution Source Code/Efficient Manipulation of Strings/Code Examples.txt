@@ -1,0 +1,3 @@
+The time, currency and string examples are all within the StringBean class.
+
+

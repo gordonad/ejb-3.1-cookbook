@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar>
+	<assembly-descriptor>
+		<container-transaction>
+			<method>
+				<ejb-name>PopulationManager</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+		</container-transaction>
+		<container-transaction>
+			<method>
+				<ejb-name>CityFacade </ejb-name>
+				<method-name>changePopulation</method-name>
+			</method>
+		<trans-attribute>Mandatory</trans-attribute>
+		</container-transaction>
+	</assembly-descriptor>
+</ejb-jar>
+

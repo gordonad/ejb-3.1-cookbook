@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-752-. --><xs:schema xmlns:tns="http://service/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service/">
+
+<xs:element name="timeOfDay" type="tns:timeOfDay" />
+
+<xs:element name="timeOfDayResponse" type="tns:timeOfDayResponse" />
+
+<xs:complexType name="timeOfDay">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="timeOfDayResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
